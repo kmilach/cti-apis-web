@@ -1,0 +1,64 @@
+/* styles.css */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+form {
+  text-align: center;
+  margin: 10px;
+}
+
+h1 {
+  color: #333;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+p {
+  text-align: center;
+}
+
+.api-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.api-keys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  flex: 1 0 200px;
+  margin: 10px;
+  width: 50%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.legend {
+  text-align: center;
+  font-style: italic;
+  font-size: 60%;
+  color: #888;
+  margin-top: 10px;
+}

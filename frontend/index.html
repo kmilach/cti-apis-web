@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreatIntel Board</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- intro text -->
+    <h1>ThreatIntel Board</h1>
+    <p>Testing project for cybersecurity professionals. Use your <b>API keys</b> to query each threat intelligence endpoint all at once.</p>
+    <p>The supported platforms are listed below.</p>
+    <hr>
+    <!-- forms to submit the API keys -->
+    <div class="api-keys">
+        <div class="column">
+            <form id="requestForms">
+                <label for="apiKeyPulsedive">
+                    <a href="https://pulsedive.com/"><img src="icon-pulsedive.png" class="api-icon"></a>
+                    Pulsedive key:
+                </label>
+                <input type="text" class="api-key" id="apiKeyPulsedive">
+            </form>
+        </div>
+        <div class="column">
+            <form id="requestForms">
+                <label for="apiKeyVirusTotal">
+                    <a href="https://www.virustotal.com/"><img src="icon-virustotal.png" class="api-icon"></a>
+                    VirusTotal key:
+                </label>
+                <input type="text" class="api-key" id="apiKeyVirusTotal">
+            </form>
+        </div>
+    </div>
+    <hr>
+    <!-- form to write the query and submit it -->
+    <div>
+        <form id="queryForm" style="text-align: center;">
+            <label for="query">Query:</label>
+            <input type="text" id="query" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="error" class="error-message"></p>
+        <legend class="legend">Search for: IP addresses, domains, URLs or file hashes (SHA256)</legend>
+    </div>
+    <!-- source script -->
+    <script src="app.js"></script>
+</body>
+</html>
