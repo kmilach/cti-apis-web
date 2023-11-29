@@ -1,5 +1,5 @@
 # base image
-FROM python:3.10.12-slim-bullseye
+FROM python:3.13.0a2-slim-bullseye
 # work directory
 WORKDIR /app
 # first install the required python modules
